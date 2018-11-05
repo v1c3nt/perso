@@ -1,1 +1,23 @@
+ @font-face {
+     font-family: Rogeu;
+     src: url('../fonts/Rogeu.otf');
+ }
 $color1 : #fff;
+body {
+    background-image: linear-gradient(#1e1e1e, #383838);
+    width: 1366px;
+    margin: auto;
+    height: 100vh;
+}
+
+header {
+    margin: auto;
+    background-image: url('../images/header.png');
+    width: 1366px;
+    height: 245px;
+}
+
+.test {
+    color: aqua;
+    font-family: Rogeu, Arial, sans-serif;
+}
