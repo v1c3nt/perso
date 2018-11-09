@@ -10,26 +10,27 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     max-width: 1366px ;
+    overflow-y: hidden;
+    overflow-x: auto;
 
 }
 
 .wrapper{
-    position: fixed;
     border: 5px solid red;
-    //max-width: 1360px;
     margin: auto;
-    height: 90vh;
-    overflow-y: hidden;
-    overflow-x: auto;
-    display: flex;
-    flex-wrap: nowrap;
-    width: 50000px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    width: 90vh;
+    transform: rotate(-90deg);
+    transform-origin: right top;
 }
 
 .wrapper>div {
-    width: 800px;
-    height: 100%;
+    width: 89vh;
+    height: 89vh;
     border: 2px solid green;
+    transform: rotate(90deg);
+    transform-origin: right top;
 }
 
 .test {
