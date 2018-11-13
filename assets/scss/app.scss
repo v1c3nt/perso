@@ -1,12 +1,42 @@
  @font-face {
      font-family: Rogeu;
      src: url('../fonts/Rogeu.otf');
- }
-.red {
-    float: left;
-    width: 80vh;
-    height: 80vh;
-    background-color: antiquewhite;
+}
+/*******************
+*TODO test- ****
+********************/
+.test{
+    border: 2px solid red;
+}
+
+.flaot{
+    float: right;
+    align-self: flex-end;    
+}
+
+/*******************
+**** --colors-- ****
+********************/
+$color1: #06a994;
+$color2: #36afed;
+$color3: #ff7d88;
+
+
+/*******************
+**** ---logo--- ****
+********************/
+
+#vsam, #closed {
+    position: relative;
+    display: inline-block;
+    width: 30%;
+    height: 20%;
+}
+
+#closed {
+    height: 20%;
+    top: -20%;
+    left: 30%;
 }
 
 
@@ -16,30 +46,68 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     overflow-y: hidden;
-    overflow-x: auto;   
+    overflow-x: auto;
+    margin: auto;
+    height: 95vh;
+    color: $color2;
 }
+
+h1, h2, h3 {
+    font-family: rogeu, sans-serif;
+    color: $color1;
+    text-shadow: 0.09rem 0.08rem $color3;
+}
+
+h2 {
+    
+    font-size: 8rem;
+    margin-top: 1rem; 
+}
+
+
+.div2{
+    width: 20rem;
+    height: 1px;
+    display: none;
+    position: relative;
+    //top: -25vh;
+    justify-self: flex-end;
+}
+
+.show{
+}
+
 
 .wrapper{
-    float: left;
-    overflow-y: auto;
-    overflow-x: hidden;
-    width: 95vh;
-    transform: rotate(-90deg) translateY(-94vh);
-    transform-origin: right top;
-    
+    display: flex;
+    flex-wrap: nowrap;
+    margin: auto;
+    overflow-x: auto;
+    overflow-y: hidden;
+    width: 1000vw;
+    height: 100%;
 }
 
+article {
+    width: 95vw;
+    height: 95vh;
+    padding: 0.5rem;
+    margin: 0 1rem;
+    display: flex;
+    flex-direction: column;
+    align-content: flex-end;
+}
 .wrapper>div {
-   
-    border: 2px red solid;
-    color: aquamarine;
-    width: 94vh;
-    height: 94vh;
-    transform: rotate(90deg);
-    //transform-origin: right top;
+    width: 95vw;
+    height: 95vh;
+    padding: 0.5rem;
+    margin: 0 1rem;
 }
-
-.test {
-    color: aqua;
-    font-family: Rogeu, Arial, sans-serif;
+/**
+.wrapper>div:nth-child(odd) {
+    background-color: powderblue;
 }
+.wrapper>div:nth-child(even) {
+     color: green; 
+    }
+*/
