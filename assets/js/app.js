@@ -16,7 +16,13 @@ var app = {
     
     init: function () {
         console.log('Hello Webpack Encore! Edit me in assets/js/app.js');
-     
+    
+    $(document).scroll(function () {
+        var x = $(this).scrollLeft();
+        if (x > 1300) {
+            $('.div2').show(4000);
+        } 
+    });
 
 
     },
