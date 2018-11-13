@@ -2,6 +2,12 @@
      font-family: Rogeu;
      src: url('../fonts/Rogeu.otf');
  }
+.red {
+    float: left;
+    width: 80vh;
+    height: 80vh;
+    background-color: antiquewhite;
+}
 
 
 body {
@@ -9,28 +15,28 @@ body {
     background-size: 100%;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    max-width: 1366px ;
     overflow-y: hidden;
-    overflow-x: auto;
-
+    overflow-x: auto;   
 }
 
 .wrapper{
-    border: 5px solid red;
-    margin: auto;
+    float: left;
     overflow-y: auto;
     overflow-x: hidden;
-    width: 90vh;
-    transform: rotate(-90deg);
+    width: 95vh;
+    transform: rotate(-90deg) translateY(-94vh);
     transform-origin: right top;
+    
 }
 
 .wrapper>div {
-    width: 89vh;
-    height: 89vh;
-    border: 2px solid green;
+   
+    border: 2px red solid;
+    color: aquamarine;
+    width: 94vh;
+    height: 94vh;
     transform: rotate(90deg);
-    transform-origin: right top;
+    //transform-origin: right top;
 }
 
 .test {

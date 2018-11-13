@@ -16,11 +16,17 @@ var app = {
     
     init: function () {
         console.log('Hello Webpack Encore! Edit me in assets/js/app.js');
-     
+    
+                $(window).on('mousewheel DOMMouseScroll', function (event) {
 
+                    var delta = Math.max(-1, Math.min(1, (event.originalEvent.wheelDelta || -event.originalEvent.detail)));
 
+                    $(this).scrollLeft($(this).scrollLeft() - (delta * 40));
+                    event.preventDefault();
+
+                });
+        
     },
-
 
 }
 $(app.init);
